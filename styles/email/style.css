@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
-@media (min-width: 100px) and (max-width: 1100px) {
+@media (min-width: 100px) and (max-width: 400px) {
+    * {
+        font-size: 12px;
+    }
+    .email .email-container {
+        width: 100%;
+    }
+    .double-inputs {
+        display: flex;
+        flex-direction: column;
+    
+        width: 100%;
+    }
+    .double-inputs input {
+        width: 98%;
+    }
+    .send-email-btn {
+        width: 100%;
+    }
+}
+@media (min-width: 401px) and (max-width: 1100px) {
     * {
         font-size: 16px;
     }
@@ -64,8 +84,6 @@
     align-items: flex-start;
     justify-content: space-around;
     flex-direction: column;
-
-    height: 400px;
 }
 .inputs input,select,option,textarea {
     background: #F9F9F9;
