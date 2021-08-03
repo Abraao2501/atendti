@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
 @media (min-width: 100px) and (max-width: 500px) {
     * {
-        font-size: 12px!!important;
+        font-size: 12px!important;
     }
     .email .email-container {
         width: 100%;
