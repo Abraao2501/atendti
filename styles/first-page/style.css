@@ -8,11 +8,19 @@
 
             font-family: 'Montserrat', sans-serif;
         }
+        .menuContainer,
         .header_links,
         .header_login,
         .cta_see_products,
         .whatsapp_button {
             display: none;
+        }
+        .menuContainer {
+            transform: translateX(-2000px);
+            transition: .5s;
+
+            width: 100%;
+            height: 100vh;
         }
         body {
             background-image: url('../../img/background img.png');
@@ -203,7 +211,7 @@
                 font-size: 17px;
             }
         }
-        @media(max-width: 767px){
+        @media(max-width: 768px){
             .cta_title {
                 font-size: 2.2rem;
                 margin-left: 1rem;
@@ -217,6 +225,43 @@
                 font-weight: 500;
                 font-size: 16px;
             }
+            .header_menu {
+                cursor: pointer;
+            }
+            .on {
+                padding: 2rem;
+                background-color: #091A39;
+                position: fixed;
+
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: space-around;
+
+                transform: translateX(0);
+                transition: .5s;
+            }
+            .on .close {
+                cursor: pointer;
+            }
+            .menuContainer header {
+                width: 100%;
+                position: relative;
+            }
+
+            .menuContainer nav {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+            .menuContainer a{
+                color: white;
+                text-decoration: none;
+                font-size: 1.5rem;
+            }
         }
         @media (min-width: 100px) and (max-width: 1100px){
             .element {
@@ -228,5 +273,6 @@
             .element-desc {
                 font-size: 1rem !important;
             }
+                       
         }
         

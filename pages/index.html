@@ -27,6 +27,18 @@
   
 </style>
 <body>
+  <div class="menuContainer">
+    <header>
+      <img src="/img/close.png" class="close">
+    </header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Nossos Produtos</a>
+      <a href="#">Sobre Nós</a>
+      <a href="#">Quem somos?</a>
+      <a href="#">Entre em contato</a>
+    </nav>    
+  </div>
   <div class="black-filter"></div>
     <header class="menu_container">
         <img src="../img/menu.svg" alt="Menu" class="header_menu">
@@ -300,9 +312,18 @@
     </footer>
   <script>
       const logoAtendti = document.querySelector('.header_logo');
+      const menuIcon = document.querySelector('.header_menu');
+      const close = document.querySelector('.close');
+      const menuContainer = document.querySelector('.menuContainer');
       if(window.innerWidth >= 900){
           logoAtendti.src = '../img/logo.png'
       }
+      menuIcon.addEventListener('click',()=>{
+        menuContainer.classList.toggle('on')
+      })
+      close.addEventListener('click',()=>{
+        menuContainer.classList.toggle('on')
+      })
   </script>
 </body>
 </html>
